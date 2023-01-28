@@ -6,7 +6,7 @@ import ShopDetail from "../ShopDetail";
 import { useAppDispatch, useAppSelector } from "../../hooks/useTypedSelectort";
 import { useEffect, useState } from "react";
 
-const Header = (): JSX.Element | JSX.Element[] => {
+const Header = (): JSX.Element => {
   const { open, toggleOpen } = useShopListContext();
   const dispatch = useAppDispatch();
 
