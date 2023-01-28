@@ -4,6 +4,8 @@ export const Container = styled.header`
   background-color: ${(props) => props.theme["blue-500"]};
   padding: 28px 0px 28px 65px;
 
+  position: sticky;
+  top: 0;
   a {
     transition: opacity 0.2s;
     &:hover {
