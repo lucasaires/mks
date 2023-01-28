@@ -21,6 +21,7 @@ export const Container = styled.nav`
     height: 100%;
   }
   @media (max-width: 767px) {
+    width: 80%;
   }
 `;
 
@@ -67,6 +68,7 @@ export const Content = styled.div`
       flex-direction: column;
       align-items: center;
       width: 100%;
+      max-height: 165px;
     }
   }
   li {
@@ -114,6 +116,7 @@ export const Content = styled.div`
       max-width: 220px;
       height: 100%;
       max-height: 250px;
+      padding-bottom: 5px;
 
       div {
         figure {
@@ -232,11 +235,107 @@ export const CardAmount = styled.div`
       }
     }
   }
+  @media (max-width: 767px) {
+    display: none !important;
+  }
 `;
 
 export const CardName = styled.div`
   width: 20%;
   @media (max-width: 767px) {
     width: 100%;
+  }
+`;
+
+export const ShowPrice = styled.div`
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+`;
+
+export const ContainerPrice = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+export const Price = styled.div`
+  @media (max-width: 767px) {
+    background: #373737;
+    border-radius: 5px;
+    color: #fff;
+    width: 60px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+  }
+`;
+
+export const ShowMobile = styled.div`
+  display: none !important;
+
+  @media (max-width: 767px) {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+  }
+`;
+
+export const MobileUpdate = styled.div`
+  height: 19px;
+  width: 50px;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 0.3px solid #bfbfbf;
+
+  font-weight: 400;
+  font-size: 10px;
+
+  display: flex;
+  justify-content: space-evenly !important;
+  align-items: center;
+
+  div {
+    button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+
+      transition: opacity 0.2s;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+`;
+
+export const CloseContainer = styled.div`
+  position: relative;
+`;
+
+export const CloseContent = styled.div`
+  position: absolute;
+  @media (max-width: 767px) {
+    top: 5px;
+    left: 80px;
+  }
+  top: -50px;
+  left: 340px;
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
